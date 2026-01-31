@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Site Title</title>
+    <meta name="description" content="Site description." />
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; font-family: system-ui, -apple-system, sans-serif; }
+      .wrap {
+        min-height: 100vh;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      .name {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -0.02em;
+      }
+      .about-bottom {
+        margin-top: auto;
+        max-width: 640px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site" role="banner">
+        <div class="name">Your Name</div>
+        <nav aria-label="Primary">
+          <a href="#posts">Posts</a>
+          <a href="#notes">Notes</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <section class="intro" aria-label="Intro">
+        <p>[Intro text]</p>
+      </section>
+
+      <section id="posts" class="section" aria-labelledby="posts-title">
+        <h2 id="posts-title">Posts</h2>
+        <div class="posts">
+          <article class="post">
+            <h3><a href="#">[Post title]</a></h3>
+            <div class="meta">[Date • Read time • Tags]</div>
+            <p>[Post summary]</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="notes" class="section" aria-labelledby="notes-title">
+        <h2 id="notes-title">Notes</h2>
+        <div class="prose">
+          <p>[Notes text]</p>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+        <div class="posts">
+          <article class="post">
+            <h3><a href="#">[Project name]</a></h3>
+            <div class="meta">[Tech stack • Outcome]</div>
+            <p>[Project summary]</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section about-bottom" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <div class="prose">
+          <p>[About text]</p>
+        </div>
+      </section>
+
+      <section id="contact" class="section" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <div class="prose">
+          <p>[Email] · [GitHub] · [LinkedIn]</p>
+        </div>
+      </section>
+
+      <footer>
+        <span>© <span id="year"></span> Your Name</span>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
