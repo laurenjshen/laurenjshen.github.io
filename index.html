@@ -24,11 +24,11 @@
       .wrap {
         max-width: 1320px;
         margin: 0 auto;
-        padding: 32px 20px 60px;
+        padding: 56px 20px 60px;
       }
       header {
         display: flex;
-        align-items: flex-start;
+        align-items: flex-end;
         justify-content: space-between;
         gap: 24px;
       }
@@ -42,8 +42,8 @@
         flex: 0 0 auto;
       }
       .photo {
-        width: 160px;
-        height: 160px;
+        width: 220px;
+        height: 220px;
         border-radius: 50%;
         object-fit: cover;
       }
@@ -58,6 +58,18 @@
         display: flex;
         gap: 12px;
         flex-wrap: wrap;
+      }
+      tagline {
+        display: block;
+        margin-top: 4px;
+        margin-bottom: 6px;
+      }
+      .about-inline {
+        margin: 6px 0 18px;
+        color: #444;
+        max-width: 60ch;
+        font-size: 16px;
+        line-height: 1.6;
       }
       .section {
         margin-top: 24px;
@@ -124,21 +136,25 @@
           </div>
           <h1>lauren j shen</h1>
           <tagline> cs + math @ mit </tagline>
+          <!-- <p class="about-inline">
+            Hi, I'm Lauren! I'm studying CS and math at MIT. Previously, I've
+            worked at Amazon on the Linux team and done various research projects.
+          </p> -->
         </div>
         <div class="photo-row" aria-label="Photos">
           <!-- Replace src with your photo files -->
-          <img class="photo" src="B916A3F4-01AB-4CE3-9FCB-31988A531F15.JPG" alt="Photo of Lauren 1" />
-          <img class="photo" src="IMG_2598.jpeg" alt="Photo of Lauren 2" />
+          <img
+            class="photo"
+            src="B916A3F4-01AB-4CE3-9FCB-31988A531F15.JPG"
+            alt="photo of me in LA"
+          />
+          <img
+            class="photo"
+            src="IMG_2598.jpeg"
+            alt="my profile photo on most things"
+          />
         </div>
       </header>
-
-      <!-- <section class="section" aria-labelledby="about-title">
-        <h2 id="about-title">about</h2>
-        <p>
-          Hi, nice to meet you! My name is Lauren, and I'm studying cs and math
-          at MIT.
-        </p>
-      </section> -->
 
       <div class="two-col">
         <section class="section" aria-labelledby="experience-title">
@@ -181,7 +197,10 @@
                   >sneak peek</a
                 ></strong
               >
-              <p>3D multiplayer hide and seek game, web.lab 2026 3rd place</p>
+              <p>
+                (January 2026) 3D multiplayer hide and seek game, web.lab 2026
+                3rd place
+              </p>
             </li>
             <li>
               <strong
@@ -190,8 +209,8 @@
                 ></strong
               >
               <p>
-                various research projects conducted 2022-2024, selected for 3X
-                ISEF Finalist, Regeneron STS Scholar
+                (2022-2024) various research projects, selected for 3X ISEF
+                Finalist, Regeneron STS Scholar
               </p>
             </li>
           </ul>
@@ -215,10 +234,15 @@
               </p>
             </li>
             <li>
-              <strong>mentoring</strong>
-              <p>
-                mentoring students through the Summit STEM Fellowship program
-              </p>
+              <strong
+                ><a
+                  href="https://www.summiteducation.org/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >mentoring</a
+                ></strong
+              >
+              <p>mentoring students through the Summit STEM Fellowship</p>
             </li>
           </ul>
         </section>
